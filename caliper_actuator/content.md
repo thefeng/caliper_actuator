@@ -23,11 +23,12 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **8x M3x8mm Hex Bolts**
 * **2x M5 Nylon Hex Nuts**
     * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
+
+
+### Other Requirements
 * **3D Printer**
     * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
-
-### Software requirements
-* SimpleCV - see below for installation instructions
+    * The size of the printing platform needs to be at least 100x60mm to print the required components (this is allowing for space to print a support raft)
 
 
 ### Step 1 - Connect the camera module  
