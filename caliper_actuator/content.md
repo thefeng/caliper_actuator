@@ -1,13 +1,11 @@
 
 # Digital Caliper Linear Actuator
 
-
 ## Building a Linear Actuator From a Set of Digital Calipers
+![Linear Actuator](images/actuatorScreen.png)
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
-![Linear Actuator](images/actuatorScreen.png)
-
 
 ### Hardware requirements
 ![Hardware Requirements](images/hardwareRequirements.png)
@@ -30,6 +28,9 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **Electrical Wire**
     * The wire should be rated to over 1A. The wire used here was 7/0.2 (24AWG) 1.4A rated. 
     * It helps to have a few different colours!
+* **Arduino + Motor Shield OR 12V Power Supply**
+    * This system is designed to operate as a servomotor - ie. a linear actuator with feedback control. The output of the digital caliper can be fed into an Arduino (or similar microprocessor) which can then control the power of a motor shield driving the DC motor (potentially using a PID loop) to achieve desired positioning.
+    * However, a simple benchtop power supply will be able to test the mechanical linear positioning system.
 * **Heatshrink and Cable Braid** (Optional)
     * Useful for keeping wires looking neat and tidy, but not essential
 
@@ -47,19 +48,20 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
     * Useful for securing delicate solder connections, but not essential
 
 ### Step 1 - Print the 3D Printed Components 
-Download the 3D printed Components from [here](dummy link).
 
 There are three components to print:
 * A carriage which houses the hex nuts and is glued onto the reverse of the sliding screen on the digital caliper. The lead screw (threaded rod) drives this carriage.
 * A motor mount which glues onto one end of the stationary slider of the digital caliper. This holds the motor fixed so that rotation of the lead screw will drive the carriage.
 * A support bracket which glues onto the other end of the stationary slider. This holds the other end of the lead screw in place to reduce slop in the system. This also provides vertical support for the lead screw. 
+* 
+Download the 3D printed Components from [here](dummy link).
 
-The components have been provided in .stl format, and 
+The components have been provided in .stl format, and these files as printed on a MakerBot Replicator 2 using PLA were compatible with the particular components which we sourced. However, to accommodate different availability of components, it may be necessary for you to alter the dimensions of the 3D printed components, especially the motor mount, the exact sizing of which will depend on the particular gearmotor used. With different printers and different plastics, the tolerances will also change, and the exact sizing of the holes for the threaded rod and nylon nuts may need to be changed in order to ensure a snug fit. Be prepared to go through a few iterations of trial and error!
 
-### Step 2 - Check that the camera is connected  
-In the terminal, type the following command
-`raspistill -t 5000`
-This will display a preview window for 5 seconds.
+The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
+
+### Step 2 - Solder the Motor Electrical Connections
+The motor 
 
 ### Step 3 - Install SimpleCV
 First install the necessary dependency packages required by SimpleCV. This can be done in the terminal with the command 
