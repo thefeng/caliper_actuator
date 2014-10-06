@@ -2,14 +2,13 @@
 # Digital Caliper Linear Actuator
 
 ## Building a Linear Actuator From a Set of Digital Calipers
-<img src=images/actuatorScreen.png align=middle width=600>
-![Linear Actuator](images/actuatorScreen.png)
+<img src=images/actuatorScreen.png width=600>
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
 
 ### Hardware requirements
-![Hardware Requirements](images/hardwareRequirements.png)
+<img src=images/hardwareRequirements.png width=600>
 * **1x Standard Digital Caliper**
     * These can be found on eBay, amazon or your local hardware shop for ~£15.
 * **1x 12V Hobby DC Gearmotor**
@@ -40,7 +39,7 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
     * You will need a 3D printer to print crucial components required for the linear actuator. 
     * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
     * The size of the printing platform needs to be at least 100x60mm to print the required components (this is allowing for space to print a support raft)
-![3D Printer](images/3dPrinter.png)
+<img src=images/3dPrinter.png width=600>
 * **Soldering Iron**
     * At least 25W
     * Ideally temperature adjustable, 370 degrees is around the temperature you want
