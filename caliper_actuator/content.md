@@ -6,6 +6,8 @@
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
+![Linear Actuator](images/actuatorScreen.png)
+
 
 ### Hardware requirements
 ![Hardware Requirements](images/hardwareRequirements.png)
@@ -23,23 +25,36 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **8x M3x8mm Hex Bolts**
 * **2x M5 Nylon Hex Nuts**
     * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
+* **Araldite**
+    * Or equivalent epoxy resin. We will need to glue plastic and stainless steel.
 * **Electrical Wire**
     * The wire should be rated to over 1A. The wire used here was 7/0.2 (24AWG) 1.4A rated. 
     * It helps to have a few different colours!
-* **Araldite**
-    * Or equivalent epoxy resin. We will need to glue plastic and stainless steel.
+* **Heatshrink and Cable Braid** (Optional)
+    * Useful for keeping wires looking neat and tidy, but not essential
 
 ### Other Requirements
-![3D Printer](images/3dPrinter.png)
 * **3D Printer**
     * You will need a 3D printer to print crucial components required for the linear actuator. 
     * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
     * The size of the printing platform needs to be at least 100x60mm to print the required components (this is allowing for space to print a support raft)
+![3D Printer](images/3dPrinter.png)
 * **Soldering Iron**
+    * At least 25W
+    * Ideally temperature adjustable, 370 degrees is around the temperature you want
 * **Screwdrivers, Allen Keys etc**
+* **Glue Gun** (Optional)
+    * Useful for securing delicate solder connections, but not essential
 
-### Step 1 - Connect the camera module  
-Connect the camera module to the CSI port on the Raspberry Pi. With the camera connected, enable the camera from the raspi-config menu. Detailed instructions on how to install the camera can be found at [http://www.raspberrypi.org/archives/3890](http://www.raspberrypi.org/archives/3890).
+### Step 1 - Print the 3D Printed Components 
+Download the 3D printed Components from [here](dummy link).
+
+There are three components to print:
+* A carriage which houses the hex nuts and is glued onto the reverse of the sliding screen on the digital caliper. The lead screw (threaded rod) drives this carriage.
+* A motor mount which glues onto one end of the stationary slider of the digital caliper. This holds the motor fixed so that rotation of the lead screw will drive the carriage.
+* A support bracket which glues onto the other end of the stationary slider. This holds the other end of the lead screw in place to reduce slop in the system. This also provides vertical support for the lead screw. 
+
+The components have been provided in .stl format, and 
 
 ### Step 2 - Check that the camera is connected  
 In the terminal, type the following command
