@@ -209,4 +209,5 @@ There is also a project also developed under the OpenLabTools initiative of an o
 
 This low cost open source linear actuator can be used in a wide range of applications where 0.01mm precision is sufficient. These can include low cost microscopes and optical systems, precision machining and other automation applications. This project has merely been a proof of concept and further research is required to improve the mechanical performance of the system and to quantitatively determine its performance. 
 
-This project is part of the OpenLabTools initiative and was developed in the Cambridge University Engineering Department. For more information, please visit [www.openlabtools.org](www.openlabtools.org).
+
+*This project is part of the OpenLabTools initiative and was developed in the Cambridge University Engineering Department. For more information, please visit [www.openlabtools.org](www.openlabtools.org).*
