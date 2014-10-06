@@ -2,7 +2,7 @@
 # Digital Caliper Linear Actuator
 
 ## Building a Linear Actuator From a Set of Digital Calipers
-![Linear Actuator](images/actuatorScreen.png =600x)
+![Linear Actuator](images/actuatorScreen.png width="600")
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
