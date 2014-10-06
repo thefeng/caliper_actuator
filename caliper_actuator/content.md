@@ -142,15 +142,14 @@ The components have been provided in .stl format, and these files as printed on 
 The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
 
 ### Step 5 - Tap and Glue the 3D Printed Components
+
+<img src=images/3dPrintComponents.png width=600>
+
 Before glueing the 3D printed components, they need to be tapped. There are four holes on the carriage and four holes on the motor mount which should be tapped with an M3 tap. Make sure the thread is straight - a straight hole does necessarily mean a straight thread. 
 
 Insert the M5 nylon nuts into the slots on the 3D printed carriage. They should go in with some resistance, and fit snugly. However, if you have to distort the screws to get them in, then it is too tight. Adjust the design of the 3D printed piece until you have a good fit.
 
 Now is also a good time to check the clearances of the 5mm holes and make sure that the threaded rod will slide through with no resistance. If it is too tight, then clear out the hole by hand with a 5mm drill bit. 
-
-Prepare the epoxy resin to glue the 3D printed components onto the reassembled digital caliper carriage and slide. 
-
-<img src=images/3dPrintComponents.png width=600>
 
 Glue the carriage on first - there are cutouts for the screws, so aligh the holes on the rear of the carriage to the cutouts on the 3D printed piece. Apply a thin layer of epoxy on both pieces to be glued, press together firmly, and clamp securely. Check the alignment of the holes and edges before and after clamping. 
 
@@ -158,15 +157,25 @@ Glue the carriage on first - there are cutouts for the screws, so aligh the hole
 
 In the image above, you can also see the end support glued on - it is advisable to glue the carriage first, so that it is less likely to glue the end support on the wrong side of the slider. The end support is symmetrical so there is no need to worry about orientation. The far edge should be aligned with the end of the slide. 
 
-Here is the completed carriage. 
+Here is the completed carriage. One side should be flush.
 
 <img src=images/glueCarriageComplete.png width=600>
+
+And the other should overhang slightly.
+
+<img src=images/glueCarriageComplete2.png width=600>
 
 Finally, glue on the motor mount. This should sit snugly on the end of the caliper, and the side should be flush with the side of the caliper. The exact positioning of this may need to be adjusted depending on the particular design of caliper and any modifications made to the mount. 
 
 <img src=images/glueMotor.png width=600>
 
-### Step 6 - Assemble the 
+### Step 6 - Assemble the System
+
+Attach the motor coupling to the motor shaft and screw the motor onto the motor mount using the M3 bolts. 
+
+<img src=images/assembleMotor.png width=600>
+
+Screw the screen back onto the carriage. This should go on the opposite side of the 3D printed carriage. 
 
 
 ### Step 3 - Install SimpleCV
