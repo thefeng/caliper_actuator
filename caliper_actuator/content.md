@@ -57,9 +57,9 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **Glue Gun** (Optional)
     * Useful for securing delicate solder connections, but not essential
 * **Table/G Clamps** (Optional)
-    * Useful for securing the work pieces when glueing
+    * Useful for securing the work pieces when gluing
 
-### Step 1 - Solder the Motor Electrical Connections
+### Step 1 - Soldering the Motor Electrical Connections
 Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
 
 <img src=images/motorWires.png width=600>
@@ -72,7 +72,7 @@ It is nice to tidy up the cabling using heatshrink and cable braid. Here red and
 
 <img src=images/motorCable.png width=600>
 
-### Step 2 - Disassemble the Digital Caliper
+### Step 2 - Disassembling the Digital Caliper
 Remove any stickers on the digital caliper and remove any glue residue, workshop oil and grime from the calipers using a suitable solvent. Unscrew the four screws on the rear of the caliper retaining the screen assembly. 
 
 <img src=images/caliperRear.png width=600>
@@ -93,7 +93,7 @@ Now, reassemble the digital caliper by sliding the carriage back onto the slide.
 
 <img src=images/caliperReassemble.png width=600>
 
-### Step 3 - Solder the Digital Caliper Connections
+### Step 3 - Soldering the Digital Caliper Connections
 Inspect the rear of the screen which you have disassembled from the carriage. There should be four more screws holding a small PCB in place. Remove these screws and carefully remove the PCB. 
 
 <img src=images/caliperElectronics.png width=600>
@@ -126,7 +126,7 @@ Finally, here's the completed screen assembly, cable braided and heatshrinked.
 
 <img src=images/caliperCable.png width=600>
 
-### Step 4 - Print the 3D Printed Components 
+### Step 4 - Printing the 3D Printed Components 
 
 <img src=images/3dPrint.png width=600>
 
@@ -143,11 +143,11 @@ The components have been provided in .stl format, and these files as printed on 
 
 The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
 
-### Step 5 - Tap and Glue the 3D Printed Components
+### Step 5 - Finishing and Gluing the 3D Printed Components
 
 <img src=images/3dPrintComponents.png width=600>
 
-Before glueing the 3D printed components, they need to be tapped. There are four holes on the carriage and four holes on the motor mount which should be tapped with an M3 tap. Make sure the thread is straight - a straight hole does necessarily mean a straight thread. 
+Before gluing the 3D printed components, they need to be tapped. There are four holes on the carriage and four holes on the motor mount which should be tapped with an M3 tap. Make sure the thread is straight - a straight hole does necessarily mean a straight thread. 
 
 Insert the M5 nylon nuts into the slots on the 3D printed carriage. They should go in with some resistance, and fit snugly. However, if you have to distort the screws to get them in, then it is too tight. Adjust the design of the 3D printed piece until you have a good fit.
 
@@ -171,7 +171,7 @@ Finally, glue on the motor mount. This should sit snugly on the end of the calip
 
 <img src=images/glueMotor.png width=600>
 
-### Step 6 - Assemble the System
+### Step 6 - Assembling the System
 
 Attach the motor coupling to the motor shaft and screw the motor onto the motor mount using the M3 bolts. 
 
