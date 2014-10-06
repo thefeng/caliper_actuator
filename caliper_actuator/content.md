@@ -2,13 +2,16 @@
 # Digital Caliper Linear Actuator
 
 ## Building a Linear Actuator From a Set of Digital Calipers
+
 <img src=images/actuatorScreen.png width=600>
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
 
 ### Hardware requirements
+
 <img src=images/hardwareRequirements.png width=600>
+
 * **1x Standard Digital Caliper**
     * These can be found on eBay, amazon or your local hardware shop for ~£15.
 * **1x 12V Hobby DC Gearmotor**
@@ -31,6 +34,8 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **Arduino + Motor Shield OR 12V Power Supply**
     * This system is designed to operate as a servomotor - ie. a linear actuator with feedback control. The output of the digital caliper can be fed into an Arduino (or similar microprocessor) which can then control the power of a motor shield driving the DC motor (potentially using a PID loop) to achieve desired positioning.
     * However, a simple benchtop power supply will be able to test the mechanical linear positioning system.
+* **Cable Crimps and Connector Housings** (Optional)
+    * Depending on how you want to connect the output from the digital caliper to your microprocessor, you may want some crimps and housings to make a simple connector. 
 * **Heatshrink and Cable Braid** (Optional)
     * Useful for keeping wires looking neat and tidy, but not essential
 
@@ -39,7 +44,9 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
     * You will need a 3D printer to print crucial components required for the linear actuator. 
     * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
     * The size of the printing platform needs to be at least 100x60mm to print the required components (this is allowing for space to print a support raft)
+
 <img src=images/3dPrinter.png width=600>
+
 * **Soldering Iron**
     * At least 25W
     * Ideally temperature adjustable, 370 degrees is around the temperature you want
@@ -77,9 +84,42 @@ Here is what the two components should look like afterwards.
 
 <img src=images/caliperModComplete.png width=600>
 
-Now, reassemble the digital caliper by sliding the carriage back onto the slide. There should be some slop, and a gap between the slide and the carriage, through which the brass strip should be reinsterted as shown in the image below. You may have to loosen the small screws on the side of the carriage. Now tighten the screws again once the strip is fully inserted - this is a fine operation - too tight and the slider will stick, too loose and the brass strip will pop out. Be prepared for some trial and error and frustration! 
+Now, reassemble the digital caliper by sliding the carriage back onto the slide. There should be some slop, and a gap between the slide and the carriage, through which the brass strip should be reinserted as shown in the image below. You may have to loosen the small screws on the side of the carriage. Now tighten the screws again once the strip is fully inserted - this is a fine operation - too tight and the slider will stick, too loose and the brass strip will pop out. Be prepared for some trial and error and frustration! 
 
 <img src=images/caliperReassemble.png width=600>
+
+### Step 3 - Solder the Digital Caliper Connections
+Inspect the rear of the screen which you have disassembled from the carriage. There should be four more screws holding a small PCB in place. Remove these screws and carefully remove the PCB. 
+
+<img src=images/caliperElectronics.png width=600>
+
+Different caliper designs will very slightly in how the screen is connected to the PCB and the excact configuration of the buttons, but it should look something like this. Note, the white that you see on the plastic section is not the backgroud below, but the rear or the screen. The black square is foam padding which separates the screen and the PCB. 
+
+<img src=images/caliperElectronicsDisassembled.png width=600>
+
+Importantly, note the four solder connections on the left of the PCB. These are the digital outputs of the caliper. From left to right, they are +1.5V (Green), Clock (Purple), Data (White) and Ground (Black). Cut and strip ~200mm wire of each respective colour to solder onto the connections. 
+
+<img src=images/caliperElectronicsSolder.png width=600>
+
+Carefully solder each wire to its respective connection. This is a very delicate operation because the wires are so close togeter. A clamp, good lamp and an extra pair of hands will make your life much easier. Make sure that you have a solid connection for each wire - tug on it gently to check. Make sure that your blobs of solder do not accidentally connect neighbouring connections together. Also, be careful not to heat the wires for too long and melt the insulation - this could lead to wires shorting when you move the carriage.
+
+<img src=images/caliperElectronicsSoldered.png width=600>
+
+To protect the delicate connection and make sure it doesn't move during operation, use a glue gun to encase the solder connections in glue. You may have to trim the glue so that the PCB will fit back into the casing.
+
+<img src=images/caliperElectronicsGlued.png width=600>
+
+Carefully reassemble the PCB, screen and plastic casing. The plastic casing should have a removable cover where the solder connections are so that the wires can pass through. If there isn't a removable cover, then you will have to drill holes for the wires to pass through. 
+
+<img src=images/caliperElectronicsComplete.png width=600>
+
+You can choose to crimp the other end of the cables for an easy connection to the microprocessor. 
+
+<img src=images/caliperCrimp.png width=600>
+
+Finally, here's the completed screen assembly, cable braided and heatshrinked. 
+
+<img src=images/caliperCable.png width=600>
 
 ### Step 1 - Print the 3D Printed Components 
 There are three components to print:
