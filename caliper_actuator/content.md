@@ -179,7 +179,7 @@ Attach the motor coupling to the motor shaft and screw the motor onto the motor 
 
 Insert the M5 threaded rod through the end support at the end of the slide. The hole should correspond to where the nylon nuts are on the carriage. Put two M5 nuts onto the threaded rod and then screw it into the carriage until it comes out of the other side. You can also optionally insert a 5mm rod (or a M5 threaded rod) through the other hole in the support and insert it into the hole in the carriage. This can act as an optional external actuating rod. This should be retained by inserting two M3 bolts into the tapped holes. 
 
-<img src=images/assembleMotor.png width=600>
+<img src=images/assembleEnd.png width=600>
 
 Screw the threaded rod until a sufficiently long section protrudes from the other end of the carriage that it can be coupled to the motor. The coupling is shown here.
 
