@@ -9,8 +9,21 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 
 ### Hardware requirements
 ![Hardware Requirements](images/hardwareRequirements.png)
-* Raspberry Pi with internet connection
-* Raspberry Pi camera module
+* **1x Standard Digital Caliper**
+    * These can be found on eBay, amazon or your local hardware shop for ~£15.
+* **1x 12V Hobby DC Gearmotor**
+    * Preferably high torque. The motor used here was 120rpm.
+    * Look for a metric shaft diameter. The motor used here had a 3mm shaft.
+    * These types of hobby motors can be found on eBay or at your local hobby store. [This](http://www.ebay.co.uk/itm/120RPM-12V-0-5A-High-Torque-Mini-Electric-DC-Geared-Motor/290912754915?_trksid=p2047675.c100011.m1850&_trkparms=aid%3D222007%26algo%3DSIC.MBE%26ao%3D1%26asc%3D25292%26meid%3D3328ae8d418844cdbd0718bd1c078b82%26pid%3D100011%26prg%3D10621%26rk%3D4%26rkt%3D10%26sd%3D271576830585) is the motor used here.
+* **1x 5x3mm Motor Coupling**
+    * This is to couple your DC Gearmotor to your M5 Threaded Rod. If you have a different shaft diameter, you will need a 5x_mm Motor Coupling.
+    * This is probably the most difficult component to source, but eBay generally has a good selection. It is also possible to machine or 3D print a coupling yourself, but it will not have the same robustness as a flexible jaw coupling.
+* **1x 200mm M5 Threaded Rod**
+    * Look for high quality A2 or A4 stainless steel. Stiffness and precision machining are desirable. 
+* **8x M3x8mm Hex Bolts**
+* **2x M5 Nylon Hex Nuts**
+    * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
+
 
 ### Software requirements
 * SimpleCV - see below for installation instructions
