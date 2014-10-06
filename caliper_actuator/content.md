@@ -26,6 +26,8 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **8x M3x8mm Hex Bolts**
 * **2x M5 Nylon Hex Nuts**
     * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
+* **4x M5 Stainless Hex Nuts**
+    * These can also be nylon. 
 * **Araldite**
     * Or equivalent epoxy resin. We will need to glue plastic and stainless steel.
 * **Electrical Wire**
@@ -175,59 +177,36 @@ Attach the motor coupling to the motor shaft and screw the motor onto the motor 
 
 <img src=images/assembleMotor.png width=600>
 
-Screw the screen back onto the carriage. This should go on the opposite side of the 3D printed carriage. 
+Insert the M5 threaded rod through the end support at the end of the slide. The hole should correspond to where the nylon nuts are on the carriage. Put two M5 nuts onto the threaded rod and then screw it into the carriage until it comes out of the other side. You can also optionally insert a 5mm rod (or a M5 threaded rod) through the other hole in the support and insert it into the hole in the carriage. This can act as an optional external actuating rod. This should be retained by inserting two M3 bolts into the tapped holes. 
 
+<img src=images/assembleMotor.png width=600>
 
-### Step 3 - Install SimpleCV
-First install the necessary dependency packages required by SimpleCV. This can be done in the terminal with the command 
-`sudo apt-get install ipython python-opencv python-scipy python-numpy python-setuptools python-pip` 
+Screw the threaded rod until a sufficiently long section protrudes from the other end of the carriage that it can be coupled to the motor. The coupling is shown here.
 
-Next download and install SimpleCV itself 
-`sudo pip install https://github.com/sightmachine/SimpleCV/zipball/master` 
- 
-SimpleCV should now be installed on your Raspberry Pi. SimpleCV comes with its own shell application which can be accessed from the terminal by typing `simplecv`. From here you can carry out the full range of image processing operations available. However for more complex operations and for interfacing with the Raspberry Pi camera it is easier to use Python scripts.
+<img src=images/assembleCoupling.png width=600>
 
-### Step 4 - Loading an image from the camera into SimpleCV  
-Everything is now in place to start using SimpleCV and the camera module. Open up a text editor and type the following: 
- 
-    import subprocess
-    from SimpleCV import Image
-    import time
+Screw the screen back onto the carriage. This should go on the opposite side to the 3D printed component. 
 
-    call(“raspistill -n -t 0 -w %s -h %s -o image.bmp” % 640 480, shell=True)
+<img src=images/assembleScreen.png width=600>
 
-    img = Image(“image.bmp”)
+Finally, screw two more nuts onto the threaded rod on the other side of the end support. Then the screws on each side of the end support against each other such that they retain the threaded rod and prevent any lateral movement. Make sure they are not so tight that they restrict the rotation though. 
 
-    img.show()
-    time.sleep(5)
+<img src=images/assembleEndNuts.png width=600>
 
-Save the text file as ‘camera.py’, and in the command line type `python camera.py` to run.
+And voila! We have assembled a complete linear actuator. 
 
-The program opens up the camera, takes a still photo, and saves it to a file called image.bmp. SimpleCV then opens the file and displays it on screen for 5 seconds. Normally in SimpleCV an image can be loaded directly from the camera, for example:
- 
-    cam = Camera()
-    img = cam.getImage()
-  
-However unfortunately there is no similar method for interacting with the Raspberry Pi, which is why this rather roundabout approach of calling the command-line instruction from within Python must be used.
+<img src=images/assembleComplete.png width=600>
 
-### Step 5 - Image processing  
-With the camera image now loaded into SimpleCV, we can perform any image processing tasks we need. For example, try adding one of the following code snippets to the end of the program and running: 
- 
-    img = img.edges()
-    img.show()
-    time.sleep(5)
+Turn the motor by hand to check that it is rotating smoothly - if there is a lot of resistance, make sure the nuts are not overtightened, and that everything is aligned properly. Then connect the motor to a power supply or a motor shield and power on. The motor should have plenty of torque to turn the lead screw at even <5V. 
 
+### Controlling the System and Potential Applicaitons
 
-    img = img.binarize()
-    img.show()
-    time.sleep(5) 
+This system is designed to operate as a servomotor - ie. a linear actuator with feedback control. The output of the digital caliper can be fed into an Arduino (or similar microprocessor) which can then control the power of a motor shield driving the DC motor (potentially using a PID loop) to achieve desired positioning. 
 
+The end user is free to determine how they wish to control the system. Included in this github is an arduino library which is able to read the input from the digital caliper and output it as a floating point number in mm. 
 
-    img = img.findBlobs()
-    for blob in blobs:
-        blob.draw()  
-    img.show()
-    time.sleep(5) 
+There is also a project also developed under the OpenLabTools initiative of an open source linear actuator controller, which is compatible with this system and can control up to four of such axes. The system has an in-built GUI and offers functions to home, jog and move a linear axis to absolute or relative positions. 
 
+This low cost open source linear actuator can be used in a wide range of applications where 0.01mm precision is sufficient. These can include low cost microscopes and optical systems, precision machining and other automation applications. This project has merely been a proof of concept and further research is required to improve the mechanical performance of the system and to quantitatively determine its performance. 
 
-
+This project is part of the OpenLabTools initiative and was developed in the Cambridge University Engineering Department. For more information, please visit [www.openlabtools.org](www.openlabtools.org).
