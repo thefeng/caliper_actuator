@@ -50,9 +50,12 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **Soldering Iron**
     * At least 25W
     * Ideally temperature adjustable, 370 degrees is around the temperature you want
+* **M3 Tap**
 * **Screwdrivers, Allen Keys etc**
 * **Glue Gun** (Optional)
     * Useful for securing delicate solder connections, but not essential
+* **Table/G Clamps** (Optional)
+    * Useful for securing the work pieces when glueing
 
 ### Step 1 - Solder the Motor Electrical Connections
 Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
@@ -121,7 +124,10 @@ Finally, here's the completed screen assembly, cable braided and heatshrinked.
 
 <img src=images/caliperCable.png width=600>
 
-### Step 1 - Print the 3D Printed Components 
+### Step 4 - Print the 3D Printed Components 
+
+<img src=images/3dPrint.png width=600>
+
 There are three components to print:
 * A carriage which houses the hex nuts and is glued onto the reverse of the sliding screen on the digital caliper. The lead screw (threaded rod) drives this carriage.
 * A motor mount which glues onto one end of the stationary slider of the digital caliper. This holds the motor fixed so that rotation of the lead screw will drive the carriage.
@@ -129,11 +135,38 @@ There are three components to print:
 
 Download the 3D printed Components from [here](dummy link).
 
+<img src=images/3dPrintNozzle.png width=600>
+
 The components have been provided in .stl format, and these files as printed on a MakerBot Replicator 2 using PLA were compatible with the particular components which we sourced. However, to accommodate different availability of components, it may be necessary for you to alter the dimensions of the 3D printed components, especially the motor mount, the exact sizing of which will depend on the particular gearmotor used. With different printers and different plastics, the tolerances will also change, and the exact sizing of the holes for the threaded rod and nylon nuts may need to be changed in order to ensure a snug fit. Be prepared to go through a few iterations of trial and error!
 
 The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
 
+### Step 5 - Tap and Glue the 3D Printed Components
+Before glueing the 3D printed components, they need to be tapped. There are four holes on the carriage and four holes on the motor mount which should be tapped with an M3 tap. Make sure the thread is straight - a straight hole does necessarily mean a straight thread. 
 
+Insert the M5 nylon nuts into the slots on the 3D printed carriage. They should go in with some resistance, and fit snugly. However, if you have to distort the screws to get them in, then it is too tight. Adjust the design of the 3D printed piece until you have a good fit.
+
+Now is also a good time to check the clearances of the 5mm holes and make sure that the threaded rod will slide through with no resistance. If it is too tight, then clear out the hole by hand with a 5mm drill bit. 
+
+Prepare the epoxy resin to glue the 3D printed components onto the reassembled digital caliper carriage and slide. 
+
+<img src=images/3dPrintComponents.png width=600>
+
+Glue the carriage on first - there are cutouts for the screws, so aligh the holes on the rear of the carriage to the cutouts on the 3D printed piece. Apply a thin layer of epoxy on both pieces to be glued, press together firmly, and clamp securely. Check the alignment of the holes and edges before and after clamping. 
+
+<img src=images/glueCarriage.png width=600>
+
+In the image above, you can also see the end support glued on - it is advisable to glue the carriage first, so that it is less likely to glue the end support on the wrong side of the slider. The end support is symmetrical so there is no need to worry about orientation. The far edge should be aligned with the end of the slide. 
+
+Here is the completed carriage. 
+
+<img src=images/glueCarriageComplete.png width=600>
+
+Finally, glue on the motor mount. This should sit snugly on the end of the caliper, and the side should be flush with the side of the caliper. The exact positioning of this may need to be adjusted depending on the particular design of caliper and any modifications made to the mount. 
+
+<img src=images/glueMotor.png width=600>
+
+### Step 6 - Assemble the 
 
 
 ### Step 3 - Install SimpleCV
