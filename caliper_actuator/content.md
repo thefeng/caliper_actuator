@@ -23,7 +23,8 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **8x M3x8mm Hex Bolts**
 * **2x M5 Nylon Hex Nuts**
     * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
-
+* **3D Printer**
+    * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
 
 ### Software requirements
 * SimpleCV - see below for installation instructions
