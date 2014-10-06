@@ -2,7 +2,7 @@
 # Digital Caliper Linear Actuator
 
 ## Building a Linear Actuator From a Set of Digital Calipers
-![Linear Actuator](images/actuatorScreen.png width="600")
+![Linear Actuator](images/actuatorScreen.png)
 
 ### Introduction
 This is a tutorial for construction of a linear actuator with encoder feedback capable of linear positioning to a precision of 0.01mm. The system is based on a set of standard digital calipers and requires only 3D printed components and basic hardware. 
@@ -61,7 +61,11 @@ The components have been provided in .stl format, and these files as printed on 
 The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
 
 ### Step 2 - Solder the Motor Electrical Connections
-The motor 
+Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
+![Motor Wires](images/motorWires.png)
+Solder the brown and blue wires to the +ve and -ve terminals of the motor respectively. A ceramic capacitor can also be soldered between the terminals to reduce motor noise. 
+![Motor Wire Soldering](images/motorSolder.png)
+
 
 ### Step 3 - Install SimpleCV
 First install the necessary dependency packages required by SimpleCV. This can be done in the terminal with the command 
