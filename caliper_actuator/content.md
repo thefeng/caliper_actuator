@@ -53,7 +53,7 @@ There are three components to print:
 * A carriage which houses the hex nuts and is glued onto the reverse of the sliding screen on the digital caliper. The lead screw (threaded rod) drives this carriage.
 * A motor mount which glues onto one end of the stationary slider of the digital caliper. This holds the motor fixed so that rotation of the lead screw will drive the carriage.
 * A support bracket which glues onto the other end of the stationary slider. This holds the other end of the lead screw in place to reduce slop in the system. This also provides vertical support for the lead screw. 
-* 
+
 Download the 3D printed Components from [here](dummy link).
 
 The components have been provided in .stl format, and these files as printed on a MakerBot Replicator 2 using PLA were compatible with the particular components which we sourced. However, to accommodate different availability of components, it may be necessary for you to alter the dimensions of the 3D printed components, especially the motor mount, the exact sizing of which will depend on the particular gearmotor used. With different printers and different plastics, the tolerances will also change, and the exact sizing of the holes for the threaded rod and nylon nuts may need to be changed in order to ensure a snug fit. Be prepared to go through a few iterations of trial and error!
@@ -62,9 +62,12 @@ The components were originally designed using SolidWorks, and the source files h
 
 ### Step 2 - Solder the Motor Electrical Connections
 Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
-![Motor Wires](images/motorWires.png)
+
+<img src=images/motorWires.png width=600>
+
 Solder the brown and blue wires to the +ve and -ve terminals of the motor respectively. A ceramic capacitor can also be soldered between the terminals to reduce motor noise. 
-![Motor Wire Soldering](images/motorSolder.png)
+
+<img src=images/motorSolder.png width=600>
 
 
 ### Step 3 - Install SimpleCV
