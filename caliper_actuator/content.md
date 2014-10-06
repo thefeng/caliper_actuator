@@ -2,7 +2,7 @@
 # Digital Caliper Linear Actuator
 
 ## Building a Linear Actuator From a Set of Digital Calipers
-<img src=images/actuatorScreen.png style="float:center;width:600px">
+<img src=images/actuatorScreen.png float=center width=600>
 ![Linear Actuator](images/actuatorScreen.png)
 
 ### Introduction
