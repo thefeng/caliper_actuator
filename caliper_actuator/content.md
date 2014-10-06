@@ -23,13 +23,20 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **8x M3x8mm Hex Bolts**
 * **2x M5 Nylon Hex Nuts**
     * Nylon hex nuts are preferable because of their low friction, but if you struggle to find them, then normal stainless steel ones will suffice
-
+* **Electrical Wire**
+    * The wire should be rated to over 1A. The wire used here was 7/0.2 (24AWG) 1.4A rated. 
+    * It helps to have a few different colours!
+* **Araldite**
+    * Or equivalent epoxy resin. We will need to glue plastic and stainless steel.
 
 ### Other Requirements
+![3D Printer](images/3dPrinter.png)
 * **3D Printer**
+    * You will need a 3D printer to print crucial components required for the linear actuator. 
     * The printer used to print the components here was a MakerBot Replicator 2 printing PLA. 
     * The size of the printing platform needs to be at least 100x60mm to print the required components (this is allowing for space to print a support raft)
-
+* **Soldering Iron**
+* **Screwdrivers, Allen Keys etc**
 
 ### Step 1 - Connect the camera module  
 Connect the camera module to the CSI port on the Raspberry Pi. With the camera connected, enable the camera from the raspi-config menu. Detailed instructions on how to install the camera can be found at [http://www.raspberrypi.org/archives/3890](http://www.raspberrypi.org/archives/3890).
