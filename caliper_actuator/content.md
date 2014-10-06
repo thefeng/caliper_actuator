@@ -47,8 +47,41 @@ This is a tutorial for construction of a linear actuator with encoder feedback c
 * **Glue Gun** (Optional)
     * Useful for securing delicate solder connections, but not essential
 
-### Step 1 - Print the 3D Printed Components 
+### Step 1 - Solder the Motor Electrical Connections
+Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
 
+<img src=images/motorWires.png width=600>
+
+Solder the brown and blue wires to the +ve and -ve terminals of the motor respectively. A ceramic capacitor can also be soldered between the terminals to reduce motor noise. 
+
+<img src=images/motorSolder.png width=600>
+
+It is nice to tidy up the cabling using heatshrink and cable braid. Here red and black Hellerman Sleeves have been used on the motor side. The wire ends have also been crimped using bootlace crimps for a more reliable connection when used with screw terminals. 
+
+<img src=images/motorCable.png width=600>
+
+### Step 2 - Disassemble the Digital Caliper
+Remove any stickers on the digital caliper and remove any glue residue, workshop oil and grime from the calipers using a suitable solvent. Unscrew the four screws on the rear of the caliper retaining the screen assembly. 
+
+<img src=images/caliperRear.png width=600>
+
+Remove the screen carefully from the sliding carriage. Also unscrew the retaining piece on the far end of the calipers. This should allow the carriage to come off the end of the slide. There should be a brass strip which falls out when you take the carriage off *do not lose this*. Snap off the rod which may be attached to the carriage - this, the thumb wheel and the retaining piece are no longer required. 
+
+<img src=images/caliperDisassembled.png width=600>
+
+There are two pieces which need to be forcibly removed from the carriage and the screen outer casing. The section which protrudes from the right of the carriage on the image below should be removed. The carriage is made from hardened stainless steel, so this may require some elbow grease - try using a hacksaw first, but if this is difficult, then try a dremel or a guillotine. The thumb wheel retainer should be removed from the plastic casing - a Stanley knife should suffice. 
+
+<img src=images/caliperMod.png width=600>
+
+Here is what the two components should look like afterwards. 
+
+<img src=images/caliperModComplete.png width=600>
+
+Now, reassemble the digital caliper by sliding the carriage back onto the slide. There should be some slop, and a gap between the slide and the carriage, through which the brass strip should be reinsterted as shown in the image below. You may have to loosen the small screws on the side of the carriage. Now tighten the screws again once the strip is fully inserted - this is a fine operation - too tight and the slider will stick, too loose and the brass strip will pop out. Be prepared for some trial and error and frustration! 
+
+<img src=images/caliperReassemble.png width=600>
+
+### Step 1 - Print the 3D Printed Components 
 There are three components to print:
 * A carriage which houses the hex nuts and is glued onto the reverse of the sliding screen on the digital caliper. The lead screw (threaded rod) drives this carriage.
 * A motor mount which glues onto one end of the stationary slider of the digital caliper. This holds the motor fixed so that rotation of the lead screw will drive the carriage.
@@ -60,14 +93,7 @@ The components have been provided in .stl format, and these files as printed on 
 
 The components were originally designed using SolidWorks, and the source files have been provided. There is ongoing work to convert these files into the open source OpenSCAD format, and we apologise for using a format which is less than open-source friendly.
 
-### Step 2 - Solder the Motor Electrical Connections
-Cut and strip two lengths wire of ~200mm each. These will connect the motor to the motor shield or power supply. A standard colour convention of Brown for +ve and Blue for -ve should be used. 
 
-<img src=images/motorWires.png width=600>
-
-Solder the brown and blue wires to the +ve and -ve terminals of the motor respectively. A ceramic capacitor can also be soldered between the terminals to reduce motor noise. 
-
-<img src=images/motorSolder.png width=600>
 
 
 ### Step 3 - Install SimpleCV
